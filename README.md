@@ -10,14 +10,17 @@ You need dependencies below.
 - slidingwindow
   - https://github.com/adamrehn/slidingwindow
 
-Install requirements
+Install 3rd party requirements
 ```bash
 $ git clone https://www.github.com/ildoonet/tf-pose-estimation
 $ cd ProForm
 $ pip3 install -r requirements.txt
 ```
 
-Install tensorflow or tensorflow-gpu v 1.14.0
-Install CUDA and CUDnn for tensorflow
+Build c++ library for post processing. See : https://github.com/ildoonet/tf-pose-estimation/tree/master/tf_pose/pafprocess
+```
+$ cd tf_pose/pafprocess
+$ swig -python -c++ pafprocess.i && python3 setup.py build_ext --inplace
+```
 
-Replace folder in an Apache server
+Replace project in Apache Folder
