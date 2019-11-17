@@ -9,3 +9,10 @@ You need dependencies below.
 - opencv3, protobuf, python3-tk
 - slidingwindow
   - https://github.com/adamrehn/slidingwindow
+
+Install requirements
+```bash
+$ git clone https://www.github.com/ildoonet/tf-pose-estimation
+$ cd tf-pose-estimation
+$ pip3 install -r requirements.txt
+```
