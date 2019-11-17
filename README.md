@@ -13,6 +13,9 @@ You need dependencies below.
 Install requirements
 ```bash
 $ git clone https://www.github.com/ildoonet/tf-pose-estimation
-$ cd tf-pose-estimation
+$ cd ProForm
 $ pip3 install -r requirements.txt
 ```
+
+Install tensorflow or tensorflow-gpu v 1.14.0
+
