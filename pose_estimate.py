@@ -65,6 +65,8 @@ def pose_estimate(path, path_write):
         count += 1
 
         print("Finished " + file, " in ", elapsed)
+        image = TfPoseEstimator.draw_humans(image, humans, imgcopy=False)
+        cv2.imwrite(os.path.join(path, file), image)
 
     with open(path_write, 'a') as outfile:
         outfile.write(']}')

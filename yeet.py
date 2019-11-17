@@ -46,7 +46,7 @@ def totalerror():
             video2[i][counter] = video2json[i][part_names[j] + 'y']
             counter += 1
 
-        if pose_similarity.averageError(i, video1, video2) > 0.1:
+        if pose_similarity.averageError(i, video1, video2) > 0.2:
             framesoff += 1
 
     return str(framesoff/min(video1json, video2json))
@@ -79,7 +79,7 @@ def framenumbers():
             video2[i][counter] = video2json[i][part_names[j] + 'y']
             counter += 1
 
-        if pose_similarity.averageError(i, video1, video2) > 0.1:
+        if pose_similarity.averageError(i, video1, video2) > 0.2:
             frameswrong.append(i)
             frameerror.append(pose_similarity.averageError(i, video1, video2))
 
@@ -126,7 +126,7 @@ def continuouserror():
             video2[i][counter] = video2json[i][part_names[j] + 'y']
             counter += 1
 
-        if pose_similarity.averageError(i, video1, video2) > 0.1:
+        if pose_similarity.averageError(i, video1, video2) > 0.2:
             framesoff += 1
 
         if i % getEvery == 0 and i != 0:
