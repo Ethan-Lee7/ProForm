@@ -18,4 +18,6 @@ $ pip3 install -r requirements.txt
 ```
 
 Install tensorflow or tensorflow-gpu v 1.14.0
+Install CUDA and CUDnn for tensorflow
 
+Replace folder in an Apache server
