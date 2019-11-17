@@ -1,5 +1,5 @@
 # ProForm
-Frontend implementation of video pose similarity to analyze similarities between two motions<br>
+Frontend implementation of video pose similarity to analyze similarities between two motions for use in exercise and sports<br>
 
 # How to Use
 You need dependencies below.
